@@ -1,0 +1,99 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('1.jpg'); /* Check this path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 2px;
+}
+
+/* Header and Search Form */
+header {
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+}
+
+.search-container {
+    margin-top: 10px;
+}
+
+.search-container input,
+.search-container button {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+/* Navigation Bar */
+nav ul {
+    background-color: #333;
+    color: white;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover,
+nav ul li .dropdown:hover {
+    background-color: #555;
+}
+
+/* Dropdown Menu */
+.dropdown-content,
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content,
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+
+  
+
+/* Dropdown links */
+.dropdown-content a,
+.sub-dropdown-content a {
+    color: rgb(28, 25, 25);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover,
+.sub-dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
